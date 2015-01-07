@@ -1,6 +1,8 @@
 require 'sinatra'
 require 'fileutils'
 
+set :bind, '0.0.0.0'
+
 unless File.exists? '/var/lib/vikt'
   Dir.mkdir '/var/lib/vikt'
 end
